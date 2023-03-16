@@ -1,0 +1,150 @@
+<!-- Header -->
+<header #HeaderEl class="header position-fixed bg-theme-round-opac text-white">
+  <div class="row">
+    <div class="col">
+      <div class="logo-small">
+        <img src="assets/img/logo.svg" alt="" class="rounded-circle" />
+        <h5>EtixPay</h5>
+      </div>
+    </div>
+    <div class="col-auto">
+      <a routerLink="/sign-up" target="_self" class="text-white">
+        {{ "landing.skip" | translate }}
+      </a>
+    </div>
+  </div>
+</header>
+<!-- Header ends -->
+
+<!-- main page content -->
+<main #mainPage class="container-fluid h-100 py-0 theme-light-radial-gradient">
+  <div class="row h-100">
+    <div class="col-12 px-0 mx-auto">
+      <!-- Swiper -->
+
+      <swiper
+        #mainContainer
+        class="swiper-container introslides"
+        [slidesPerView]="1"
+        [spaceBetween]="0"
+        [direction]="'horizontal'"
+        [pagination]="pagination"
+        [autoplay]="{ delay: 2500, disableOnInteraction: false }"
+      >
+        <ng-template swiperSlide class="swiper-slide">
+          <div
+            class="coverimg h-75 w-100 position-absolute top-0 start-0"
+            style="background-image: url('assets/img/pages/landing/shop.png')"
+          >
+            <img
+              src="assets/img/pages/landing/shop.png"
+              alt=""
+              class="d-none"
+            />
+          </div>
+          <div class="row h-100 justify-content-center">
+            <div class="col-11 col-md-6 col-lg-4 align-self-end bottom-50">
+              <div
+                class="card rounded-top-left-40 rounded-bottom-right-40 rounded-0 text-center shadow-md"
+              >
+                <div class="card-body p-4">
+                  <h2 class="mb-3">
+                    <span class="text-secondary fw-light">{{
+                      "landing.info1.title" | translate
+                    }}</span
+                    ><br />{{ "landing.info1.title2" | translate }}
+                  </h2>
+                  <p class="text-secondary">
+                    {{ "landing.info1.info" | translate }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide class="swiper-slide-two">
+          <div
+            class="coverimg h-75 w-100 position-absolute top-0 start-0"
+            style="background-image: url('assets/img/pages/landing/store.png')"
+          >
+            <img
+              src="assets/img/pages/landing/store.png"
+              alt=""
+              class="d-none"
+            />
+          </div>
+          <div class="row h-100 justify-content-center">
+            <div class="col-11 col-md-6 col-lg-4 align-self-end bottom-50">
+              <div
+                class="card rounded-top-left-40 rounded-bottom-right-40 rounded-0 text-center shadow-md"
+              >
+                <div class="card-body p-4">
+                  <h2 class="mb-3">
+                    <span class="text-secondary fw-light">{{
+                      "landing.info2.title" | translate
+                    }}</span
+                    ><br />{{ "landing.info2.title2" | translate }}
+                  </h2>
+                  <p class="text-secondary">
+                    {{ "landing.info2.info" | translate }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide class="swiper-slide-three">
+          <div
+            class="coverimg h-75 w-100 position-absolute top-0 start-0"
+            style="
+              background-image: url('assets/img/pages/landing/community.png');
+            "
+          >
+            <img
+              src="assets/img/pages/landing/community.png"
+              alt=""
+              class="d-none"
+            />
+          </div>
+          <div class="row h-100 justify-content-center">
+            <div class="col-11 col-md-6 col-lg-4 align-self-end bottom-50">
+              <div
+                class="card rounded-top-left-40 rounded-bottom-right-40 rounded-0 text-center shadow-md"
+              >
+                <div class="card-body p-4">
+                  <h2 class="mb-3">
+                    <span class="text-secondary fw-light">{{
+                      "landing.info3.title" | translate
+                    }}</span
+                    ><br />{{ "landing.info3.title2" | translate }}
+                  </h2>
+                  <p class="text-secondary">
+                    {{ "landing.info3.info" | translate }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+
+      <div #FooterEl class="row mx-0">
+        <div class="col-6 text-end d-grid align-self-end">
+          <a
+            routerLink="/login"
+            class="btn btn-outline-default btn-lg shadow-sm btn-rounded text-normalcase"
+            >{{ "landing.logIn" | translate }}</a
+          >
+        </div>
+        <div class="col-6 d-grid align-self-end">
+          <a
+            routerLink="/sign-up"
+            class="btn btn-default btn-lg shadow-sm btn-rounded text-normalcase"
+            >{{ "landing.register" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Page content ends -->

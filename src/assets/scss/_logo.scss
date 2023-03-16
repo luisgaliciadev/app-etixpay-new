@@ -1,0 +1,44 @@
+.logo-splash {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+
+    img {
+        width: 100px;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.logo-small {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    line-height: 44px;
+
+    img {
+        width: 40px;
+        margin: 0;
+        border-radius: calc(var(--oneuiux-rounded) - 8px);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+        margin-right: 8px;
+        border: 0;
+        vertical-align: middle;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 18px;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+}
+
+.logo-img {
+    width: 100px;
+}

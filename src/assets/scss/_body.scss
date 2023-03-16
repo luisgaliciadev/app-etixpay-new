@@ -1,0 +1,472 @@
+html.menu-open {
+    overflow: hidden;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-y: auto;
+    @extend .theme-light-radial-gradient;
+}
+
+.theme-radial-gradient {
+    background-color: var(--oneuiux-theme-color-grad-1);
+    background-image: -moz-radial-gradient(30% 30%,
+            ellipse cover,
+            var(--oneuiux-theme-color-grad-1) 0%,
+            var(--oneuiux-theme-color-grad-2) 50%,
+            var(--oneuiux-theme-color-grad-3) 100%);
+    background-image: -webkit-radial-gradient(30% 30%,
+            ellipse cover,
+            var(--oneuiux-theme-color-grad-1) 0%,
+            var(--oneuiux-theme-color-grad-2) 50%,
+            var(--oneuiux-theme-color-grad-3) 100%);
+    background-image: radial-gradient(ellipse at 30% 30%,
+            var(--oneuiux-theme-color-grad-1) 0%,
+            var(--oneuiux-theme-color-grad-2) 50%,
+            var(--oneuiux-theme-color-grad-3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--oneuiux-theme-color-grad-1)', endColorstr='var(--oneuiux-theme-color-grad-3)', GradientType=1);
+}
+
+.theme-light-radial-gradient {
+    background-color: var(--oneuiux-page-bg-2);
+    background-image: -moz-radial-gradient(30% 30%,
+            ellipse cover,
+            var(--oneuiux-page-bg-1) 0%,
+            var(--oneuiux-page-bg-2) 50%,
+            var(--oneuiux-page-bg-3) 100%);
+    background-image: -webkit-radial-gradient(30% 30%,
+            ellipse cover,
+            var(--oneuiux-page-bg-1) 0%,
+            var(--oneuiux-page-bg-2) 50%,
+            var(--oneuiux-page-bg-3) 100%);
+    background-image: radial-gradient(ellipse at 30% 30%,
+            var(--oneuiux-page-bg-1) 0%,
+            var(--oneuiux-page-bg-2) 50%,
+            var(--oneuiux-page-bg-3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--oneuiux-page-bg-1)', endColorstr='var(--oneuiux-page-bg-3)', GradientType=1);
+    background-attachment: fixed;
+}
+
+.theme-linear-gradient {
+    background-color: var(--oneuiux-theme-color-grad-1);
+    background-image: -moz-linear-gradient(cover,
+            var(--oneuiux-theme-color-grad-2) 0%,
+            var(--oneuiux-theme-color-grad-3) 100%);
+    background-image: -webkit-linear-gradient(cover,
+            var(--oneuiux-theme-color-grad-2) 0%,
+            var(--oneuiux-theme-color-grad-3) 100%);
+    background-image: linear-gradient(var(--oneuiux-theme-color-grad-2) 0%,
+            var(--oneuiux-theme-color-grad-3) 100%);
+}
+
+.theme-light-linear-gradient {
+    background-color: var(--oneuiux-page-bg-2);
+    background-image: -moz-linear-gradient(cover,
+            var(--oneuiux-page-bg-2) 0%,
+            var(--oneuiux-page-bg-3) 100%);
+    background-image: -webkit-linear-gradient(cover,
+            var(--oneuiux-page-bg-2) 0%,
+            var(--oneuiux-page-bg-3) 100%);
+    background-image: linear-gradient(var(--oneuiux-page-bg-2) 0%,
+            var(--oneuiux-page-bg-3) 100%);
+    background-attachment: fixed;
+}
+
+main {
+    &.bg-1 {
+        background-image: url("../img/bg1.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: top right;
+    }
+
+    &.bg-2 {
+        background-image: url("../img/bg2.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center right;
+    }
+
+    &.bg-3 {
+        background-image: url("../img/bg3.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-position: 35% bottom;
+    }
+}
+
+.bg-none {
+    background-color: transparent;
+}
+
+.bg-opac {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.bg-opac-50 {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-opac-80 {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bg-opac-90 {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.border-opac {
+    border-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+
+.alert-danger,
+.card.alert-danger,
+.bg-danger-light {
+    background-color: lighten($red, 38%);
+}
+
+.alert-info,
+.card.alert-info,
+.bg-info-light {
+    background-color: lighten($teal, 38%);
+}
+
+.alert-primary,
+.card.alert-primary,
+.bg-primary-light {
+    background-color: lighten($blue, 38%);
+}
+
+.alert-warning,
+.card.alert-warning,
+.bg-warning-light {
+    background-color: lighten($yellow, 38%);
+}
+
+.alert-success,
+.card.alert-success,
+.bg-success-light {
+    background-color: lighten($green, 38%);
+}
+
+.alert-theme,
+.card.alert-theme,
+.bg-theme-light {
+    background-color: var(--oneuiux-theme-color-light);
+}
+
+.bg-theme,
+.modal-backdrop {
+    background: var(--oneuiux-theme-color) !important;
+    //color: var(--oneuiux-theme-text) !important;
+}
+
+.bg-theme-round-opac {
+    position: relative;
+
+    &.header {
+        padding-bottom: calc(var(--oneuiux-padding) + 25px);
+        overflow-x: hidden;
+
+        &:after {
+            content: "";
+            width: 150%;
+            height: calc(100% + 20px);
+            position: absolute;
+            top: -30px;
+            left: -25%;
+            background-color: var(--oneuiux-theme-color);
+            z-index: -1;
+            opacity: 0.9;
+            border-radius: 0 0 50% 50%;
+        }
+
+        &.active {
+            color: var(--oneuiux-theme-text) !important;
+        }
+    }
+}
+
+.bg-theme-round-opac-box {
+    overflow-x: hidden;
+
+    &:after {
+        content: "";
+        width: 150%;
+        height: calc(100% + 20px);
+        position: absolute;
+        top: -30px;
+        left: -25%;
+        background-color: var(--oneuiux-theme-color);
+        z-index: -1;
+        opacity: 0.9;
+        border-radius: 0 0 50% 50%;
+    }
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.circle-small {
+    height: 44px;
+    width: 44px;
+    position: relative;
+
+    &>div:first-child {
+        position: relative;
+        width: 100%;
+    }
+
+    &>.avatar {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 7px;
+    }
+}
+
+.chartdoughnut {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+
+    &>.datadisplay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 35px auto;
+        text-align: center;
+        display: block;
+        border-radius: 100px;
+        height: 130px;
+        width: 130px;
+        padding: 35px 0;
+        background-color: var(--oneuiux-theme-text);
+    }
+}
+
+.smallchart {
+    width: 100.4%;
+    padding: 0;
+    display: block;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 0 0 var(--oneuiux-padding) var(--oneuiux-padding);
+}
+
+.areachartsmall {
+    width: 80px !important;
+    height: 40px;
+}
+
+/* theme color */
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-indigo {
+    background-color: $indigo;
+}
+
+.bg-purple {
+    background-color: $purple;
+}
+
+.bg-pink {
+    background-color: $pink;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.bg-teal {
+    background-color: $teal;
+}
+
+.bg-cyan {
+    background-color: $cyan;
+}
+
+/* splash */
+.bg-1-splash {
+    height: 100px;
+    top: -33px;
+    position: absolute;
+    z-index: 0;
+    left: -20px;
+}
+
+radialGradient {
+    stop {
+        &:first-child {
+            stop-color: var(--oneuiux-theme-color-grad-1);
+        }
+
+        &:last-child {
+            stop-color: var(--oneuiux-theme-color-grad-3);
+        }
+    }
+}
+
+linearGradient {
+    stop {
+        &:first-child {
+            stop-color: var(--oneuiux-theme-color-grad-1);
+        }
+
+        &:last-child {
+            stop-color: var(--oneuiux-theme-color-grad-3);
+        }
+    }
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    @extend .theme-radial-gradient;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
+    &.small {
+        height: 34px;
+        width: 34px;
+    }
+}
+
+.bg-2-splash {
+    height: auto;
+    max-width: 80%;
+    bottom: 0px;
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+}
+
+.online-status {
+    height: 10px;
+    width: 10px;
+    margin: 12px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+
+.cardimg {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+
+    &+* {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.iwatchposition {
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    margin-left: -45px;
+    width: 90px;
+}
+
+.burgerposition {
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    margin-left: -60px;
+    width: 140px;
+}
+
+.personoffer {
+    position: absolute;
+    right: 5%;
+    width: 125px;
+    bottom: 0;
+}
+
+
+
+/* webkit - scrollbar*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 1023px) and (orientation: landscape) {
+    $default-grid-columns: 12;
+
+    @for $i from 1 through $default-grid-columns {
+        .col-ld-#{$i} {
+            width: (100% / $default-grid-columns) * $i;
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    :root {
+        --oneuiux-padding: 10px;
+        --oneuiux-rounded: 18px;
+    }
+
+    body {
+        font-size: 15px !important;
+    }
+
+    .logo-small img {
+        border-radius: var(--oneuiux-rounded) !important;
+    }
+
+    .size-12 {
+        font-size: 11px !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 20px !important;
+    }
+
+    .mb-3 {
+        margin-bottom: 15px !important;
+    }
+
+    .mb-2 {
+        margin-bottom: 10px !important;
+    }
+
+    .mb-1 {
+        margin-bottom: 5px !important;
+    }
+}

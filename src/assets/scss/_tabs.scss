@@ -1,0 +1,20 @@
+.tabs {
+    background-color: var(--oneuiux-theme-bordercolor);
+    border-radius: var(--oneuiux-rounded);
+    padding: 5px;
+    
+    .nav-item {
+        & > .nav-link {
+            color: var(--oneuiux-theme-color);
+            padding: calc(var(--oneuiux-padding) - 5px) var(--oneuiux-padding);
+            line-height: 30px;
+            border-radius: calc(var(--oneuiux-rounded) - 5px);
+            text-transform: uppercase;
+
+            &.active {
+                color: var(--oneuiux-theme-text);
+                background-color: var(--oneuiux-theme-color);
+            }
+        }
+    }
+}

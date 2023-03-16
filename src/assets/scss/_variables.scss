@@ -1,0 +1,166 @@
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #E50A8E !default;
+$red: #f03d4f !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #21E985 !default;
+$teal: #20c997 !default;
+$cyan: #00C2FF !default;
+$gray1: #0e0c0c !default;
+
+:root {
+    --oneuiux-rounded: 20px;
+    --oneuiux-padding: 15px;
+    --oneuiux-input-rounded: 10px;
+
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #57bdff;
+    --oneuiux-theme-color-grad-2: #4f77fb;
+    --oneuiux-theme-color-grad-3: #6528cf;
+
+    /* color schemes */
+    --oneuiux-theme-color: #0d6efd;
+    --oneuiux-theme-text: #ffffff;
+    --oneuiux-theme-text-primary: #000000;
+    --oneuiux-theme-text-secondary: #999999;
+    --oneuiux-theme-text-secondary-light: #bbbbbb;
+    --oneuiux-theme-bordercolor: rgba(0, 0, 0, 0.1);
+
+    --oneuiux-header: transparent;
+    --oneuiux-header-active: #ffffff;
+    --oneuiux-footer: #ffffff;
+    --oneuiux-sidebar: var(--oneuiux-theme-color);
+    --oneuiux-card-color: #ffffff;
+
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #eff6f9;
+    --oneuiux-page-bg-3: #faf0fb;
+    --oneuiux-page-text: #000000;
+    --oneuiux-page-link: var(--oneuiux-theme-color);
+}
+
+.theme-indigo {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #8b9dff;
+    --oneuiux-theme-color-grad-2: #5c00f1;
+    --oneuiux-theme-color-grad-3: #68008e;
+
+    /* color schemes */
+    --oneuiux-theme-color: #6610f2;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #f1eff9;
+    --oneuiux-page-bg-3: #f6f0fb;
+}
+
+.theme-purple {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #e908d8;
+    --oneuiux-theme-color-grad-2: #5a2ab3;
+    --oneuiux-theme-color-grad-3: #300284;
+
+    /* color schemes */
+    --oneuiux-theme-color: #6f42c1;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #fff5fc;
+    --oneuiux-page-bg-3: #f6f0fb;
+}
+
+.theme-pink {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #ff71c3;
+    --oneuiux-theme-color-grad-2: #e80075;
+    --oneuiux-theme-color-grad-3: #4d00da;
+
+    /* color schemes */
+    --oneuiux-theme-color: #E50A8E;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #f4f8ff;
+    --oneuiux-page-bg-3: #ffe9f7;
+}
+
+.theme-red {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #ffc699;
+    --oneuiux-theme-color-grad-2: #ff5d83;
+    --oneuiux-theme-color-grad-3: #dc006a;
+
+    /* color schemes */
+    --oneuiux-theme-color: #FF5465;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #fffbf2;
+    --oneuiux-page-bg-3: #ffeeee;
+}
+
+.theme-orange {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #ffeb7b;
+    --oneuiux-theme-color-grad-2: #ffc400;
+    --oneuiux-theme-color-grad-3: #ff7300;
+
+    /* color schemes */
+    --oneuiux-theme-color: #fd7e14;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #fffaf4;
+    --oneuiux-page-bg-3: #fff4eb;
+}
+
+.theme-yellow {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #ffdb6f;
+    --oneuiux-theme-color-grad-2: #f0ac00;
+    --oneuiux-theme-color-grad-3: #f03000;
+
+    /* color schemes */
+    --oneuiux-theme-color: #ffc107;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #f9f4ef;
+    --oneuiux-page-bg-3: #fbf8f0;
+}
+
+.theme-green {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #bdffaa;
+    --oneuiux-theme-color-grad-2: #04c5de;
+    --oneuiux-theme-color-grad-3: #00a0f5;
+
+    /* color schemes */
+    --oneuiux-theme-color: #21E985;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #eff6f9;
+    --oneuiux-page-bg-3: #e6f7f0;
+}
+
+.theme-teal {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #a2fffa;
+    --oneuiux-theme-color-grad-2: #00a2ad;
+    --oneuiux-theme-color-grad-3: #3f51b5;
+
+    /* color schemes */
+    --oneuiux-theme-color: #20c997;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #fff7fd;
+    --oneuiux-page-bg-3: #e8faf8;
+}
+
+.theme-cyan {
+    /* radial gradient colors */
+    --oneuiux-theme-color-grad-1: #74e5fb;
+    --oneuiux-theme-color-grad-2: #26F7FF;
+    --oneuiux-theme-color-grad-3: #2482FB;
+
+    /* color schemes */
+    --oneuiux-theme-color: #00C2FF;
+    --oneuiux-page-bg-1: #ffffff;
+    --oneuiux-page-bg-2: #f1eff9;
+    --oneuiux-page-bg-3: #f0f8fb;
+}
+
+@media screen and (max-width: 340px) {
+    :root {
+        --oneuiux-padding: 10px;
+        --oneuiux-rounded: 12px;
+    }
+}

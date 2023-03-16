@@ -1,0 +1,391 @@
+.dark-mode {
+    /* color schemes */
+    --oneuiux-theme-text: #ffffff;
+    --oneuiux-theme-text-primary: rgba(255, 255, 255, 0.92);
+    --oneuiux-theme-text-secondary: rgba(255, 255, 255, 0.8);
+    --oneuiux-theme-text-secondary-light: #bbbbbb;
+    --oneuiux-theme-bordercolor: rgba(255, 255, 255, 0.125);
+
+    --oneuiux-header: transparent;
+    --oneuiux-sidebar: var(--oneuiux-theme-color);
+    --oneuiux-page-text: #ffffff;
+    --oneuiux-page-link: var(--oneuiux-theme-color);
+
+    --oneuiux-theme-color: #0d6efd;
+    --oneuiux-theme-link: #438cfa;
+    --oneuiux-header-active: #044fc0;
+    --oneuiux-footer: #044fc0;
+    --oneuiux-card-color: #0036aa;
+    --oneuiux-page-color: rgba(0, 0, 0, 0.70); // bg-white used for page color 
+    --oneuiux-page-bg-1: #0a57ca;
+    --oneuiux-page-bg-2: #073881;
+    --oneuiux-page-bg-3: #031838;
+
+    .theme-indigo {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #8b9dff;
+        --oneuiux-theme-color-grad-2: #5c00f1;
+        --oneuiux-theme-color-grad-3: #68008e;
+        /* color schemes */
+        --oneuiux-theme-color: #6610f2;
+        --oneuiux-theme-link: #a167ff;
+        --oneuiux-header-active: #2d066d;
+        --oneuiux-footer: #2d066d;
+        --oneuiux-card-color: #340d77;
+        --oneuiux-page-bg-1: #19033d;
+        --oneuiux-page-bg-2: #11022a;
+        --oneuiux-page-bg-3: #010003;
+    }
+
+    .theme-purple {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #e908d8;
+        --oneuiux-theme-color-grad-2: #5a2ab3;
+        --oneuiux-theme-color-grad-3: #300284;
+        /* color schemes */
+        --oneuiux-theme-color: #6f42c1;
+        --oneuiux-theme-link: #a883ee;
+        --oneuiux-header-active: #321d57;
+        --oneuiux-footer: #321d57;
+        --oneuiux-card-color: #402770;
+        --oneuiux-page-bg-1: #1c1031;
+        --oneuiux-page-bg-2: #130b22;
+        --oneuiux-page-bg-3: #020103;
+    }
+
+    .theme-pink {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #ff71c3;
+        --oneuiux-theme-color-grad-2: #e80075;
+        --oneuiux-theme-color-grad-3: #4d00da;
+        /* color schemes */
+        --oneuiux-theme-color: #E50A8E;
+        --oneuiux-theme-link: #fd46b4;
+        --oneuiux-header-active: #680540;
+        --oneuiux-footer: #680540;
+        --oneuiux-card-color: #5c0137;
+        --oneuiux-page-bg-1: #2b021b;
+        --oneuiux-page-bg-2: #18010f;
+        --oneuiux-page-bg-3: black;
+    }
+
+    .theme-red {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #ffc699;
+        --oneuiux-theme-color-grad-2: #ff5d83;
+        --oneuiux-theme-color-grad-3: #dc006a;
+        /* color schemes */
+        --oneuiux-theme-color: #f03d4f;
+        --oneuiux-theme-link: #f46c7a;
+        --oneuiux-header-active: #960e1c;
+        --oneuiux-footer: #960e1c;
+        --oneuiux-card-color: #810816;
+        --oneuiux-page-bg-1: #640811;
+        --oneuiux-page-bg-2: #51060e;
+        --oneuiux-page-bg-3: #2b0307;
+    }
+
+    .theme-orange {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #ffda6b;
+        --oneuiux-theme-color-grad-2: #ff7c15;
+        --oneuiux-theme-color-grad-3: #e80774;
+        /* color schemes */
+        --oneuiux-theme-color: #fd7e14;
+        --oneuiux-theme-link: #fd9a47;
+        --oneuiux-header-active: #813b01;
+        --oneuiux-footer: #813b01;
+        --oneuiux-card-color: #682f00;
+        --oneuiux-page-bg-1: #592901;
+        --oneuiux-page-bg-2: #3a1b00;
+        --oneuiux-page-bg-3: #120800;
+    }
+
+    .theme-yellow {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #ffdb6f;
+        --oneuiux-theme-color-grad-2: #f0ac00;
+        --oneuiux-theme-color-grad-3: #f03000;
+        /* color schemes */
+        --oneuiux-theme-color: #ffc107;
+        --oneuiux-theme-link: #ffce3a;
+        --oneuiux-header-active: #775900;
+        --oneuiux-footer: #775900;
+        --oneuiux-card-color: #684f00;
+        --oneuiux-page-bg-1: #443300;
+        --oneuiux-page-bg-2: #302400;
+        --oneuiux-page-bg-3: #070500;
+    }
+
+    .theme-green {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #bdffaa;
+        --oneuiux-theme-color-grad-2: #04c5de;
+        --oneuiux-theme-color-grad-3: #00a0f5;
+        /* color schemes */
+        --oneuiux-theme-color: #12da76;
+        --oneuiux-theme-link: #4fee9f;
+        --oneuiux-header-active: #0b703e;
+        --oneuiux-footer: #0b703e;
+        --oneuiux-card-color: #076637;
+        --oneuiux-page-bg-1: #074224;
+        --oneuiux-page-bg-2: #052f1a;
+        --oneuiux-page-bg-3: #010a06;
+    }
+
+    .theme-teal {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #a2fffa;
+        --oneuiux-theme-color-grad-2: #00a2ad;
+        --oneuiux-theme-color-grad-3: #3f51b5;
+        /* color schemes */
+        --oneuiux-theme-color: #0ebbac;
+        --oneuiux-theme-link: #3ce0af;
+        --oneuiux-header-active: #045e56;
+        --oneuiux-footer: #045e56;
+        --oneuiux-card-color: #044b45;
+        --oneuiux-page-bg-1: #052219;
+        --oneuiux-page-bg-2: #03100c;
+        --oneuiux-page-bg-3: black;
+    }
+
+    .theme-cyan {
+        /* radial gradient colors */
+        --oneuiux-theme-color-grad-1: #74e5fb;
+        --oneuiux-theme-color-grad-2: #258cd6;
+        --oneuiux-theme-color-grad-3: #3d00ab;
+        /* color schemes */
+        --oneuiux-theme-color: #00C2FF;
+        --oneuiux-theme-link: #46d2fd;
+        --oneuiux-header-active: #045f7a;
+        --oneuiux-footer: #045f7a;
+        --oneuiux-card-color: #015169;
+        --oneuiux-page-bg-1: #002f3d;
+        --oneuiux-page-bg-2: #001f29;
+        --oneuiux-page-bg-3: black;
+    }
+
+    .alert-danger,
+    .card.alert-danger,
+    .bg-danger-light {
+        background-color: rgba(#f03d4f, 0.35);
+    }
+
+    .alert-info,
+    .card.alert-info,
+    .bg-info-light {
+        background-color: rgba(#20c997, 0.35);
+    }
+
+    .alert-primary,
+    .card.alert-primary,
+    .bg-primary-light {
+        background-color: rgba(#0d6efd, 0.35);
+    }
+
+    .alert-warning,
+    .card.alert-warning,
+    .bg-warning-light {
+        background-color: rgba(#ffc107, 0.35);
+    }
+
+    .alert-success,
+    .card.alert-success,
+    .bg-success-light {
+        background-color: rgba(#21E985, 0.35);
+    }
+
+    .alert-theme,
+    .card.alert-theme,
+    .bg-theme-light {
+        background-color: var(--oneuiux-theme-color-light);
+    }
+
+    main {
+        &.bg-1 {
+            background: url("../img/bg1-dark.png") fixed;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: top right;
+        }
+
+        &.bg-2 {
+            background: url("../img/bg2-dark.png") fixed;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center right;
+        }
+
+        &.bg-3 {
+            background: url("../img/bg3-dark.png") fixed;
+            background-repeat: no-repeat;
+            background-size: auto auto;
+            background-position: 35% bottom;
+        }
+    }
+
+    body.bg-theme main {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .progressbar-text {
+        color: var(--oneuiux-theme-text) !important;
+    }
+
+    .border,
+    .border-top,
+    .border-end,
+    .border-bottom,
+    .border-start,
+    .noUi-target {
+        border-color: var(--oneuiux-theme-bordercolor) !important;
+    }
+
+    body,
+    .btn-outline-dark {
+        color: var(--oneuiux-theme-text);
+    }
+
+    a:not(.btn):not(.list-group-item) {
+        color: var(--oneuiux-theme-link);
+
+        &:focus,
+        &:hover,
+        &:active {
+            color: #ffffff;
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: var(--oneuiux-theme-text);
+        }
+    }
+
+    .tabs .nav-item>.nav-link:not(.active) {
+        --oneuiux-theme-color: var(--oneuiux-theme-text);
+    }
+
+    .chartdoughnut>.datadisplay {
+        --oneuiux-theme-text: var(--oneuiux-theme-color);
+    }
+
+    .btn-light {
+        background-color: var(--oneuiux-card-color);
+        color: var(--oneuiux-theme-text);
+        border-color: var(--oneuiux-page-bg-1);
+    }
+
+    .bg-light,
+    .counter-number,
+    .counter-number .btn {
+        background-color: var(--oneuiux-card-color) !important;
+    }
+
+    .btn-default {
+        color: var(--oneuiux-theme-text);
+    }
+
+    .btn-default:disabled {
+        color: var(--oneuiux-theme-text);
+    }
+
+    .card {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.1);
+        -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.1);
+        -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.1);
+    }
+
+    .accordion-item {
+        background-color: transparent;
+
+        .accordion-header {
+            .accordion-button.collapsed {
+                background-color: transparent;
+                color: var(--oneuiux-theme-text);
+            }
+        }
+
+        .accordion-collapse.show {
+            background-color: var(--oneuiux-card-color);
+        }
+    }
+
+    .list-group-item {
+        color: var(--oneuiux-theme-text);
+    }
+
+    .bg-white,
+    .bg-opac-50 {
+        background-color: var(--oneuiux-page-color) !important;
+    }
+
+    .log-information.bubble-sheet li p {
+        background-color: var(--oneuiux-header-active) !important;
+    }
+
+    .toast {
+        background-color: var(--oneuiux-card-color);
+
+        .toast-header {
+            background-color: var(--oneuiux-theme-color);
+            color: var(--oneuiux-card-text);
+        }
+    }
+
+    .modal-content {
+        background-color: var(--oneuiux-theme-color);
+
+        .modal-header {
+            border-color: var(--oneuiux-theme-bordercolor);
+        }
+    }
+
+    .form-control,
+    input,
+    .dark-bg .form-control,
+    .dark-bg label {
+        color: var(--oneuiux-input-text);
+    }
+
+    .form-control {
+        background-color: var(--oneuiux-input-color);
+        border-color: var(--oneuiux-input-bordercolor);
+    }
+
+    .chat-list .left-chat .chat-block {
+        --oneuiux-theme-text: var(--oneuiux-card-color);
+    }
+
+    .daterange-center.daterangepicker {
+        background-color: var(--oneuiux-page-bg-2);
+
+        .calendar-table .next span,
+        .calendar-table .prev span {
+            border-color: var(--oneuiux-theme-text);
+        }
+
+        td {
+            &.off {
+                background-color: var(--oneuiux-card-color) !important;
+            }
+
+            &.in-range {
+                color: var(--oneuiux-theme-text);
+            }
+        }
+    }
+
+    .text-purple,
+    .text-color-theme,
+    .tag {
+        color: var(--oneuiux-theme-text);
+    }
+
+    .footer .nav .nav-item:not(.squarebtn) .nav-link.active {
+        color: var(--oneuiux-theme-text);
+        opacity: 1;
+    }
+
+
+}

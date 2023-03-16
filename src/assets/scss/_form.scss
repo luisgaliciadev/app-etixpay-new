@@ -1,0 +1,202 @@
+.form-floating {
+    position: relative;
+
+    &>label {
+        padding: var(--oneuiux-padding) 0;
+        line-height: 32px;
+    }
+
+    &>.form-control:focus~label,
+    &>.form-control:not(:placeholder-shown)~label,
+    &>.form-select~label {
+        font-size: 13px;
+        padding: 5px 0 var(--oneuiux-padding) 0;
+        line-height: 28px;
+        height: auto;
+        transform: scale(0.85) translateY(-0.5rem) translateX(0rem);
+    }
+
+    .form-control {
+        background-color: transparent;
+        border-width: 0 0 1px 0;
+        border-color: var(--oneuiux-theme-bordercolor);
+        border-radius: 0;
+        padding: var(--oneuiux-padding) 0 var(--oneuiux-padding) 0;
+        height: auto;
+        line-height: 30px;
+        -webkit-appearance: none;
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            padding-top: calc(var(--oneuiux-padding) + 13px);
+            padding-bottom: calc(var(--oneuiux-padding) - 3px);
+            line-height: 20px;
+        }
+
+        &.is-valid {
+            border-color: $green;
+
+            &:focus {
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+            }
+        }
+
+        &.is-invalid {
+            border-color: $red;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+        }
+    }
+
+    &.is-valid {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            height: 1px;
+            bottom: 0;
+            width: 100%;
+            border-radius: 2px;
+            background-color: $green;
+
+        }
+    }
+
+    &.is-invalid {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            height: 1px;
+            bottom: 0;
+            width: 100%;
+            border-radius: 2px;
+            background-color: $red;
+        }
+    }
+}
+
+.form-control {
+    -webkit-appearance: none;
+    border-color: var(--oneuiux-theme-bordercolor);
+    border-radius: var(--oneuiux-rounded);
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.trasparent-input {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 10px 15px;
+    border: 0;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    border-radius: var(--oneuiux-rounded);
+
+    &:focus {
+        background-color: var(--oneuiux-theme-bordercolor);
+        outline: none;
+    }
+}
+
+.tooltip-btn {
+    background: none;
+    border: 0;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -18px;
+    right: 0px;
+    padding: 5px 10px;
+    line-height: 26px;
+}
+
+.search-header {
+    position: relative;
+
+    .form-control {
+        padding: 0.625rem 0.75rem;
+    }
+}
+
+/* range picker slider */
+.noUi-target {
+    background-color: var(--oneuiux-theme-color-light);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+
+    &.noUi-horizontal {
+        height: 10px;
+    }
+
+    .noUi-origin {
+        .noUi-handle {
+            height: 30px;
+            width: 30px;
+            top: -11px;
+            border: 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .noUi-connect {
+        background-color: var(--oneuiux-theme-color);
+    }
+}
+
+.number-incrementer {
+    vertical-align: middle;
+
+    .btn {
+        padding: 0 10px;
+        line-height: 18px;
+        margin: 0;
+    }
+
+    p {
+        line-height: 16px;
+        display: block;
+        font-size: 12px;
+    }
+}
+
+.form-check.avatar {
+    display: block;
+    position: relative;
+    padding: 0;
+
+    .form-check-input {
+        position: absolute;
+        left: 3px;
+        bottom: 3px;
+        margin-left: 0;
+        z-index: 1;
+        border-radius: 10px;
+        opacity: 0.5;
+
+        &:checked {
+            opacity: 1;
+        }
+    }
+}

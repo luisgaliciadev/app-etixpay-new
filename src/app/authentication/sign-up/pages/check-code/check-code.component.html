@@ -1,0 +1,18 @@
+<!-- Header -->
+<header #HeaderEl class="header position-fixed bg-theme-round-opac text-white">
+  <div class="row">
+    <div class="col">
+      <div class="logo-small">
+        <img src="assets/img/logo.svg" alt="" class="rounded-circle" />
+        <h5>EtixPay</h5>
+      </div>
+    </div>
+    <div class="col-auto">
+      <a routerLink="/login" target="_self" class="text-white">
+        {{ "signIn.checkCode.signIn" | translate }}
+      </a>
+    </div>
+  </div>
+</header>
+<!-- Header ends -->
+<app-verify-code [verifyType]="verifyType"></app-verify-code>

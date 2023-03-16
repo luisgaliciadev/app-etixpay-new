@@ -1,0 +1,211 @@
+.btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: calc(var(--oneuiux-rounded) - 5px);
+    position: relative;
+
+    &.shadow {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    &.btn-sm {
+        font-size: 14px;
+        border-radius: calc(var(--oneuiux-rounded) - 7px);
+
+        i {
+            font-size: 12px;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    i {
+        font-size: 18px;
+    }
+}
+
+.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn-lg,
+.btn-group-lg>.btn {
+    font-size: 16px;
+    padding: var(--oneuiux-padding) calc(var(--oneuiux-padding) + 5px);
+    line-height: 28px;
+}
+
+.btn-44 {
+    height: 44px;
+    line-height: 42px;
+    width: 44px;
+    padding: 0 !important;
+}
+
+.btn-26 {
+    height: 26px;
+    line-height: 24px;
+    width: 26px;
+    padding: 0 !important;
+}
+
+.btn-default {
+    background-color: var(--oneuiux-theme-color);
+    color: var(--oneuiux-theme-text);
+
+    &:active,
+    &:hover {
+        color: var(--oneuiux-theme-text);
+    }
+
+    &:disabled {
+        background-color: var(--oneuiux-theme-bordercolor);
+        color: var(--oneuiux-theme-color);
+    }
+}
+
+.btn-outline-default {
+    background-color: var(--oneuiux-theme-text);
+    color: var(--oneuiux-theme-color);
+    border: 1px solid var(--oneuiux-theme-color) !important;
+
+    &:active,
+    &:hover {
+        color: var(--oneuiux-theme-text);
+        background-color: var(--oneuiux-theme-color);
+    }
+
+    &:disabled {
+        background-color: var(--oneuiux-theme-bordercolor);
+        color: var(--oneuiux-theme-color);
+    }
+}
+
+.btn-light {
+    background-color: var(--oneuiux-theme-text);
+    color: var(--oneuiux-theme-color);
+}
+
+.btn-icon-text {
+    padding: 0;
+
+    i {
+        height: 60px;
+        line-height: 58px;
+        width: 60px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 32px;
+        border-radius: var(--oneuiux-rounded);
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    span {
+        display: block !important;
+        text-transform: none;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.65);
+    }
+}
+
+.dark-bg {
+    .btn-light {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-color: rgba(0, 0, 0, 0.05);
+        color: var(--oneuiux-theme-text);
+    }
+
+    .btn-default {
+        background-color: #000000;
+        color: #ffffff;
+
+        &:active,
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}
+
+.count-indicator {
+    height: 6px;
+    width: 6px;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $red;
+}
+
+.bar-more {
+    &>span {
+        height: 4px;
+        width: 80%;
+        border-radius: 5px;
+        display: inline-block;
+        max-width: 0 auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        @extend .transition-05;
+    }
+
+    &.collapsed {
+        &>span {
+            height: 6px;
+            width: 60px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
+
+.counter-number {
+    border: 1px solid var(--oneuiux-theme-text);
+    background: var(--oneuiux-theme-text);
+    border-radius: 20px;
+    padding: 1px;
+    display: inline-block;
+
+    &>span {
+        min-width: 18px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    & .btn {
+        border: 1px solid var(--oneuiux-theme-bordercolor);
+        background-color: var(--oneuiux-theme-text);
+        color: var(--oneuiux-theme-color);
+    }
+
+    &.vertical {
+        border: 1px solid var(--oneuiux-theme-bordercolor);
+        padding: 0;
+
+        &>span {
+            display: block;
+        }
+
+        & .btn {
+            margin: -1px;
+
+            i {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .btn-44 {
+        height: 40px;
+        line-height: 38px;
+        width: 40px;
+    }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.36" y1="0.602" x2="0.891" y2="0.077" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcdc3c"/>
+      <stop offset="1" stop-color="#f80"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.573" y1="1.011" x2="0.233" y2="0.614" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8000"/>
+      <stop offset="0.503" stop-color="#ff860c"/>
+      <stop offset="1" stop-color="#ffb467"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.828" y1="0.134" x2="0.163" y2="0.803" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8000"/>
+      <stop offset="1" stop-color="#c85d00"/>
+    </linearGradient>
+  </defs>
+  <g id="Raggruppa_1853" data-name="Raggruppa 1853" transform="translate(-142.07 -67.387)">
+    <rect id="Rettangolo_2621" data-name="Rettangolo 2621" width="30" height="30" rx="15" transform="translate(142.07 67.387)" fill="#fff"/>
+    <g id="Raggruppa_1851" data-name="Raggruppa 1851" transform="translate(147.238 73.297)">
+      <path id="Rettangolo_2624" data-name="Rettangolo 2624" d="M2.672,0h0A2.751,2.751,0,0,1,5.424,2.751V7.432a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2.672A2.672,2.672,0,0,1,2.672,0Z" transform="translate(0 3.835) rotate(-45)" fill="url(#linear-gradient)"/>
+      <path id="Intersezione_2" data-name="Intersezione 2" d="M.108,1.122Q.052,1.066,0,1.007L.14.95C4.416-.779,6.806.336,7.217.561L7.27.615,7.229.677,3.446,4.46Z" transform="translate(1.809 4.63)" fill="#ffe600"/>
+    </g>
+    <rect id="Rettangolo_2649" data-name="Rettangolo 2649" width="5.223" height="22.191" rx="2.611" transform="translate(163.069 73.319) rotate(45)" fill="url(#linear-gradient-2)"/>
+    <path id="Intersezione_17" data-name="Intersezione 17" d="M0,4.851A5.858,5.858,0,0,1,2.334.347,2.769,2.769,0,0,1,5.617.794a2.686,2.686,0,0,1,0,3.832l-4.054,4A5.569,5.569,0,0,1,0,4.851Z" transform="translate(159.288 74.381)" fill="url(#linear-gradient-3)"/>
+    <path id="Intersezione_16" data-name="Intersezione 16" d="M0,4.872A5.854,5.854,0,0,1,2.381.348,2.858,2.858,0,0,1,5.73.8a2.669,2.669,0,0,1,0,3.848L1.595,8.667A5.549,5.549,0,0,1,0,4.872Z" transform="matrix(0.017, 1, -1, 0.017, 165.735, 84.95)" fill="url(#linear-gradient-3)"/>
+    <path id="Tracciato_372" data-name="Tracciato 372" d="M528.822-145.582a5.972,5.972,0,0,1,6.616-.816c-2.583-2.554-2.988-2.972-2.988-2.972a5.8,5.8,0,0,1-.4-6.916c-3.874,3.989-6.152,6.209-6.152,6.209s-1.774,2.715.665,6.7A19.849,19.849,0,0,1,528.822-145.582Z" transform="translate(-371.673 232.257)" fill="#ff8000"/>
+  </g>
+</svg>

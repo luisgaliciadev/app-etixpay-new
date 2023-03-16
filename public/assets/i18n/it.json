@@ -1,0 +1,85 @@
+{
+  "landing": {
+    "skip": "Skip",
+    "signUp": "Sign Up",
+    "signIn": "Sign In",
+    "logIn": "Log In",
+    "register": "Registrati",
+    "info1": {
+      "title": "Trova negozi",
+      "title2": "fisici ed online",
+      "info": "Trova negozi fisici ed online, fai la spesa e paga con Etix in tutta sicurezza. App facile da utilizzare e user-friendly"
+    },
+    "info2": {
+      "title": "Fai la spesa",
+      "title2": "e guadagna",
+      "info": "Con Etix fai la spesa quotidiana e ti diamo un cashback e punti ricompensa che trasformi in soldi veri a fine mese"
+    },
+    "info3": {
+      "title": "Crea la tua",
+      "title2": "community",
+      "info": "Se vuoi crearti una entrata mensile extra crea la tua community invitando amici su Etix con un semplice link"
+    }
+  },
+  "signIn": {
+    "setEmail": {
+      "signIn": "Sign In",
+      "register": "Registrati",
+      "inEtix": "in EtixPay",
+      "welcome": "Benvenuto,",
+      "info": "In pochi click sarai con noi",
+      "email": "Indirizzo mail",
+      "phEmail": "Inserisci il tuo indirizzo mail principale",
+      "country": "Paese",
+      "selectCountry": "Scegli il paese dove vivi",
+      "communityCode": "Community Code",
+      "phCommunityCode": "Il codice della persona che ti ha invitato in Etix",
+      "btnContinue": "Continua"
+    },
+    "checkCode": {
+      "signIn": "Sign In"
+    },
+    "personalInfo": {
+      "infoPhone": "Il tuo telefono ci serve per",
+      "infoCode": "inviarti i tuoi codici di sicurezza",
+      "name": "Nome",
+      "LastName": "Cognome",
+      "phoneNumber": "Numero di telefono (opzionale)"
+    },
+    "setCredentials": {
+      "choose": "Scegli la",
+      "infoPassword": "tua password",
+      "username": "username",
+      "password": "Password",
+      "confirmPassword": "Confirma Password",
+      "save": "Salva e finalizza"
+    },
+    "promoCode": {
+      "congratulations": "Congratulazioni!",
+      "intoEtix": "Accedi a Etix",
+      "info": "Hai completato con successo la tua registrazione, se hai un codice promo ti preghiamo di inserirlo sotto.",
+      "promoCode": "Codice Promo",
+      "phPromoCode": "inserisci il codice promo qui",
+      "logIn": "Vai al Log In",
+      "SendCode": "Invia codice promo"
+    },
+    "reward": {
+      "reward": "WOW! Riceverai",
+      "gift": "100 WIN in regalo",
+      "info": "Ben fatto! Il tuo codice promo ti da diritto a ricevere 100 WIN sulla prima ricarica di almeno 10 TIX. I WIN ti permettono di partecipare all'estrazione mensile di 1000 TIX da spendere nei negozi affiliati.",
+      "logIn": "Vai al Log In"
+    }
+  },
+  "verifyCode": {
+    "check": "Verifica",
+    "email": "la tua mail",
+    "phone": "il tuo numero",
+    "infoEmail": "Ti abbiamo inviato un codice di verifica. Inserisci il codice qui per verificare la tua mail",
+    "infoPhone": "Ti abbiamo inviato un codice di verifica. Inserisci il codice qui per verificare il tuo numero di telefono",
+    "code": "Codice di verifica",
+    "phCode": "Inserisci il codice di verifica qui",
+    "getTheEmail": "Non hai ricevuto la mail?",
+    "clickReceive": "Clicca qui per riceverne un'altra",
+    "codeSend": "Ti abbiamo inviato un nuovo codice"
+  }
+}

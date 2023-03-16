@@ -1,0 +1,182 @@
+/* tags */
+.tag {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 0 var(--oneuiux-padding);
+    background-color: var(--oneuiux-card-color);
+    color: var(--oneuiux-theme-text-secondary-light);
+    border-radius: var(--oneuiux-rounded);
+    display: inline-block;
+
+    &>i {
+        margin-right: 5px;
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &.active {
+        color: var(--oneuiux-theme-text-primary);
+        border-color: var(--oneuiux-theme-text-primary) !important;
+    }
+
+    &.tag-small {
+        height: 22px;
+        line-height: 22px;
+        vertical-align: middle;
+        font-size: 12px;
+        padding: 0 calc(var(--oneuiux-padding) - 5px);
+    }
+
+    &.tag-large {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+.taglabel {
+    width: auto;
+    padding: 5px calc(var(--oneuiux-padding) - 5px);
+    line-height: 16px;
+    background-color: $yellow;
+    z-index: 2;
+
+    &:after {
+        content: "";
+        height: 0px;
+        width: 0px;
+        border-top: 13px solid transparent;
+        border-left: 13px solid transparent;
+        border-bottom: 13px solid $yellow;
+        position: absolute;
+        left: -13px;
+        top: 0;
+    }
+
+    &:before {
+        content: "";
+        height: 0px;
+        width: 0px;
+        border-bottom: 13px solid transparent;
+        border-left: 13px solid transparent;
+        border-top: 13px solid $yellow;
+        position: absolute;
+        left: -13px;
+        top: 0;
+    }
+
+    &.taglabel-danger {
+        background-color: $danger;
+
+        &:after {
+            border-top: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-bottom: 13px solid $danger;
+        }
+
+        &:before {
+            border-bottom: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-top: 13px solid $danger;
+        }
+    }
+
+    &.taglabel-primary {
+        background-color: $blue;
+
+        &:after {
+            border-top: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-bottom: 13px solid $blue;
+        }
+
+        &:before {
+            border-bottom: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-top: 13px solid $blue;
+        }
+    }
+
+    &.taglabel-secondary {
+        background-color: $gray1;
+
+        &:after {
+            border-top: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-bottom: 13px solid $gray1;
+        }
+
+        &:before {
+            border-bottom: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-top: 13px solid $gray1;
+        }
+    }
+
+    &.taglabel-success {
+        background-color: $green;
+
+        &:after {
+            border-top: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-bottom: 13px solid $green;
+        }
+
+        &:before {
+            border-bottom: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-top: 13px solid $green;
+        }
+    }
+
+    &.taglabel-info {
+        background-color: $cyan;
+
+        &:after {
+            border-top: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-bottom: 13px solid $info;
+        }
+
+        &:before {
+            border-bottom: 13px solid transparent;
+            border-left: 13px solid transparent;
+            border-top: 13px solid $info;
+        }
+    }
+
+    &.top-0 {
+        margin-top: 15px;
+    }
+
+    &.bottom-0 {
+        margin-bottom: 15px;
+    }
+
+    &.start-0 {
+        margin-left: -5px;
+        margin-right: 0;
+
+        &:after {
+            border-left: none;
+            border-right: 13px solid transparent;
+            left: auto;
+            right: -13px;
+        }
+
+        &:before {
+            border-left: none;
+            border-right: 13px solid transparent;
+            left: auto;
+            right: -13px;
+        }
+    }
+
+    &.end-0 {
+        margin-right: -5px;
+
+    }
+}

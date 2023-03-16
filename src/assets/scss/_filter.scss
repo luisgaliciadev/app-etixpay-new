@@ -1,0 +1,18 @@
+.filter {
+    position: fixed;
+    z-index: 999;
+    width: 280px;
+    right: -300px;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    padding: var(--oneuiux-padding);
+    @extend .transition-05;    
+    
+}
+
+.filter-open{
+    .filter{
+        right: 0;
+    }
+}

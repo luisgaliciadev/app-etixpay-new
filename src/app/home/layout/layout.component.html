@@ -1,0 +1,27 @@
+<!-- Sidebar main menu -->
+<app-side-bar class="sidebar-wrap sidebar-pushcontent"></app-side-bar>
+<!-- Add overlay or fullmenu instead pushcontent , keep 'sidebar-[choice here]' -->
+<!-- Sidebar main menu ends-->
+
+<!-- Begin page -->
+<main #mainPage class="theme-light-radial-gradient">
+  <!-- Header -->
+  <app-header-menu
+    class="header position-fixed bg-theme-round-opac text-white"
+    #HeaderEl
+  ></app-header-menu>
+  <!-- Header ends -->
+
+  <!-- main page content -->
+  <div class="main-container container">
+    <div class="clearfix"></div>
+    <router-outlet></router-outlet>
+    <div class="clearfix"></div>
+  </div>
+  <!-- main page content ends -->
+</main>
+<!-- Page ends-->
+
+<!-- Footer -->
+<app-static-footer class="footer footer-squared" #FooterEl></app-static-footer>
+<!-- Footer Ends -->

@@ -1,0 +1,24 @@
+{
+  "landing": {
+    "skip": "Skip",
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "signIn": {
+    "setEmail": {
+      "signIn": "Sign In",
+      "register": "Registrati",
+      "inEtix": "in EtixPay",
+      "welcome": "Benvenuto,",
+      "info": "In pochi click sarai con noi",
+      "email": "Indirizzo mail",
+      "phEmail": "Inserisci il tuo indirizzo mail principale",
+      "country": "Paese",
+      "selectCountry": "Scegli il paese dove vivi",
+      "communityCode": "Community Code",
+      "phCommunityCode": "Il codice della persona che ti ha invitato in Etix",
+      "btnContinue": "Continua"
+    }
+  }
+
+}

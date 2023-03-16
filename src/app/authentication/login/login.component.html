@@ -1,0 +1,74 @@
+<!-- Header -->
+<header class="header position-fixed bg-theme-round-opac text-white">
+  <div class="row">
+    <div class="col">
+      <div class="logo-small">
+        <img src="assets/img/logo.svg" alt="" class="rounded-circle" />
+        <h5>EtixPay</h5>
+      </div>
+    </div>
+    <div class="col-auto">
+      <a routerLink="/sign-up" target="_self" class="text-white"> Sign up </a>
+    </div>
+  </div>
+</header>
+<!-- Header ends -->
+
+<!-- Begin page content -->
+<main class="container-fluid h-100 theme-light-radial-gradient">
+  <div class="row h-100">
+    <div class="col-12"></div>
+    <div
+      class="col-11 col-sm-11 col-md-6 col-lg-5 col-xl-3 mx-auto align-self-center py-4"
+    >
+      <h2 class="mb-4 text-center">
+        <span class="text-secondary fw-light">Sign in to</span><br />your
+        account
+      </h2>
+      <div class="form-group form-floating mb-3 is-valid">
+        <input
+          type="text"
+          class="form-control"
+          value="maxartkiller"
+          id="email"
+          placeholder="Username"
+        />
+        <label class="form-control-label" for="email">Username</label>
+      </div>
+
+      <div class="form-group form-floating is-invalid mb-3">
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Password"
+        />
+        <label class="form-control-label" for="password">Password</label>
+        <button
+          type="button"
+          class="text-danger tooltip-btn"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Enter valid Password"
+          id="passworderror"
+        >
+          <i class="bi bi-info-circle"></i>
+        </button>
+      </div>
+      <p class="mb-3 text-end">
+        <a routerLink="/forgetpassword" class=""> Forgot your password? </a>
+      </p>
+    </div>
+    <div class="col-11 col-sm-11 mt-auto mx-auto py-4">
+      <div class="row">
+        <div class="col-12 d-grid">
+          <a
+            routerLink="/home"
+            class="btn btn-default btn-lg btn-rounded shadow-sm text-normalcase"
+            >Sign In</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

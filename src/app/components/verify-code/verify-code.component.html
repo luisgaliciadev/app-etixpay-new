@@ -1,0 +1,74 @@
+<!-- Begin page content -->
+<main class="container-fluid h-100 theme-light-radial-gradient">
+  <div class="row h-100">
+    <div class="col-12"></div>
+    <div
+      class="col-11 col-sm-11 col-md-6 col-lg-5 col-xl-3 mx-auto align-self-center py-4"
+    >
+      <h1 class="text-center mb-3">
+        <span class="text-secondary fw-light">{{
+          "verifyCode.check" | translate
+        }}</span
+        ><br />
+        <span *ngIf="verifyType === 'email'">{{
+          "verifyCode.email" | translate
+        }}</span>
+        <span *ngIf="verifyType === 'phone'">{{
+          "verifyCode.phone" | translate
+        }}</span>
+      </h1>
+      <p *ngIf="verifyType === 'email'" class="text-center text-secondary mb-4">
+        {{ "verifyCode.infoEmail" | translate }}
+      </p>
+      <p *ngIf="verifyType === 'phone'" class="text-center text-secondary mb-4">
+        {{ "verifyCode.infoPhone" | translate }}
+      </p>
+
+      <div class="form-group form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Inserisci il codice di verifica qui"
+        />
+        <label class="form-control-label" for="OTP">{{
+          "verifyCode.code" | translate
+        }}</label>
+      </div>
+      <p class="text-success fw-bold">
+        {{ "verifyCode.codeSend" | translate }}
+      </p>
+    </div>
+    <div class="col-11 col-sm-11 mt-auto mx-auto pb-4">
+      <div class="row">
+        <div class="col-auto text-center mx-auto">
+          <span class="progressstimer">
+            <img src="assets/img/progress.png" alt="" />
+            <span class="timer" id="timer">
+              <countdown
+                [config]="{ leftTime: 180, format: 'mm:ss' }"
+                (event)="onTimerFinished($event)"
+              ></countdown>
+            </span>
+          </span>
+          <br />
+          <p class="mb-3">
+            <span class="text-muted">{{
+              "verifyCode.getTheEmail" | translate
+            }}</span>
+            <br />
+            <a class="text-default fw-bold">{{
+              "verifyCode.clickReceive" | translate
+            }}</a>
+          </p>
+        </div>
+        <div class="col-12 d-grid">
+          <a
+            (click)="goTo()"
+            class="btn btn-outline-default btn-lg shadow-sm btn-rounded text-normalcase"
+            >{{ "verifyCode.check" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
